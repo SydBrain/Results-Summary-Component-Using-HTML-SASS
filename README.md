@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://sydbrain.github.io/Results-Summary-Component-Using-HTML-SASS/)
 
 ## My process
 
