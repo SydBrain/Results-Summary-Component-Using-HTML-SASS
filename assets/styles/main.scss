@@ -9,7 +9,6 @@ body {
 }
 
 main {
-    height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -149,6 +148,9 @@ main {
 
 @media only screen and (min-width: 800px) {
     
+    main {
+        height: 100vh;
+    }
     .component-container {
         display: flex;
     }
