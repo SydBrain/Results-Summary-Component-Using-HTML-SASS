@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
 - [Live Site](https://sydbrain.github.io/Results-Summary-Component-Using-HTML-SASS/)
 
 ## My process
