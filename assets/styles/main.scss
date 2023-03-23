@@ -1,0 +1,180 @@
+@import "./_reset";
+@import "./_variables";
+@import "./_mixins";
+@import "./_fonts";
+
+
+body {
+  font-family: "HankenGrotesk";
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: $neutral-2;
+}
+
+.component-container {
+    background-color: $neutral-1;
+    width: 100%;
+    box-shadow: 0 0.2rem 2rem 0.2rem $shadow;
+}
+
+.result {
+    width: 100%;
+    @include flex-center(column);
+  gap: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+  background: linear-gradient(180deg, $gradient-bg-1, $gradient-bg-2);
+
+  h2 {
+    font-size: $body-font;
+  }
+
+  h2,
+  p {
+    color: $neutral-3;
+  }
+
+  .number,
+  h3 {
+    color: $neutral-1;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    $gradient-circle-1 5%,
+    $gradient-circle-2
+  );
+
+  width: 8.5rem;
+  padding: 0.8rem;
+
+  .number {
+    font-size: 56px;
+    font-weight: 800;
+  }
+}
+
+.summary {
+  padding: 2rem;
+  @include flex-center(column);
+  gap: 1rem;
+
+  .summary-heading {
+    width: 100%;
+    color: $neutral-4;
+    text-align: left;
+  }
+}
+
+.result-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 1rem;
+
+  div > img {
+    display: inline;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+  }
+
+  .accent {
+    color: $neutral-5;
+    font-weight: 700;
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+.result-container > span {
+    color: $neutral-4;
+    font-weight: 700;
+}
+
+#reaction {
+  color: $primary-1;
+  background-color: $primary-bg-1;
+}
+
+#memory {
+  color: $primary-2;
+  background-color: $primary-bg-2;
+}
+
+#verbal {
+  color: $primary-3;
+  background-color: $primary-bg-3;
+}
+
+#visual {
+  color: $primary-4;
+  background-color: $primary-bg-4;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+  background: $neutral-4;
+  color: $neutral-1;
+  border-radius: 128px;
+  padding: 1rem;
+  transition: 500ms linear;
+  &:hover,
+  &:focus {
+    transition: 500ms linear;
+    background: linear-gradient(
+        150deg,
+        $gradient-bg-1,
+        $gradient-bg-2
+    );
+  }
+}
+
+// MEDIA QUERIES
+
+@media only screen and (min-width: 800px) {
+    
+    .component-container {
+        display: flex;
+    }
+
+    .component-container,
+    .result {
+        border-radius: 32px;
+    }
+
+    .component-container > div {
+        width: 50%;
+    }
+
+    .result {
+        gap: 2.4rem;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .circle {
+        width: 55%;
+        padding: 2rem 2rem;
+        .number {
+            font-size: 72px;
+        }
+    }
+}
